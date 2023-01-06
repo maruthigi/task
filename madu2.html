@@ -1,0 +1,53 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <input type="text" id="user"></input><br>
+   <input type="text" id="user1"></input><br>
+    <input type="button" value="+" onclick="my()"></input>
+    <input type="button" value="-" onclick="my1()"></input>
+    <input type="button" value="*" onclick="my2()"></input>
+    <input type="button" value="/" onclick="my3()"></input>
+    <p id="answer">
+
+    </p>
+    <script>
+    
+     var c=document.getElementById("answer")
+function my(){
+    var a=+(document.getElementById("user").value)
+     var b=+(document.getElementById("user1").value)
+     var k=a+b
+     c.innerHTML=`${k}`
+    
+}
+function my1(){
+    var a=+(document.getElementById("user").value)
+     var b=+(document.getElementById("user1").value)
+     var k=a-b
+     c.innerHTML=`${k}`
+    
+    
+}
+function my2(){
+    var a=document.getElementById("user").value
+     var b=document.getElementById("user1").value
+     var k=a*b
+     c.innerHTML=`${k}`
+    
+}
+function my3(){
+    var a=document.getElementById("user").value
+     var b=document.getElementById("user1").value
+     var k= Math.floor(a/b)
+     c.innerHTML=`${k}`
+    
+}
+
+    </script>
+</body>
+</html>
